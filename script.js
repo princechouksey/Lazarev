@@ -74,7 +74,6 @@ var rightElems = document.querySelectorAll(".right-elem");
 }
 // page2Animation()
 
-
 function page3VideoAnimation() {
     var page3Center = document.querySelector(".page3-center")
     var video = document.querySelector("#page3 video")
@@ -96,4 +95,8 @@ function page3VideoAnimation() {
         })
     })
 }
-    page3VideoAnimation()
+    // page3VideoAnimation()
+
+
+
+ 
