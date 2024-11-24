@@ -94,9 +94,64 @@ function page3VideoAnimation() {
             borderRadius: "30px"
         })
     })
-}
-    // page3VideoAnimation()
 
+
+    var sections = document.querySelectorAll(".sec-right")
+
+    sections.forEach(function (elem) {
+        elem.addEventListener("mouseenter", function () {
+            elem.childNodes[3].style.opacity = 1
+            elem.childNodes[3].play()
+        })
+        elem.addEventListener("mouseleave", function () {
+            elem.childNodes[3].style.opacity = 0
+            elem.childNodes[3].load()
+        })
+    })
+
+}
+
+    page3VideoAnimation()
+
+    function page6Animations() {
+        gsap.from("#btm6-part2 h4", {
+            x: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: "#btm6-part2",
+                scroller: "#main",
+                // markers:true,
+                start: "top 80%",
+                end: "top 10%",
+                scrub: true
+            }
+        })
+        gsap.from("#btm6-part3 h4", {
+            x: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: "#btm6-part3",
+                scroller: "#main",
+                // markers:true,
+                start: "top 80%",
+                end: "top 10%",
+                scrub: true
+            }
+        })
+        gsap.from("#btm6-part4 h4", {
+            x: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: "#btm6-part4",
+                scroller: "#main",
+                // markers:true,
+                start: "top 80%",
+                end: "top 10%",
+                scrub: true
+            }
+        })
+    }
+    page6Animations()
 
 
  
